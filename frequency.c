@@ -68,12 +68,12 @@ void freeAll(Node* root){
 void printTree(Node* root, char *str, int j){
 	if (noChildern(root)){
 		str[j] = '\0';
-		printf("%s\t%ld\n", str, root->count);
+		printf("%s %ld\n", str, root->count);
 		return;
 	}
 	if (root->count > 0){
 		str[j] = '\0';
-		printf("%s\t%ld\n", str, root->count);
+		printf("%s %ld\n", str, root->count);
 	}
 	int i;
 	for (i=0; i<NUM_LETTERS; i++){
@@ -87,12 +87,12 @@ void printTree(Node* root, char *str, int j){
 void printTreeReverse(Node* root, char *str, int j){
 	if (noChildern(root)){
 		str[j] = '\0';
-		printf("%s\t%ld\n", str, root->count);
+		printf("%s %ld\n", str, root->count);
 		return;
 	}
 	if (root->count > 0){
 		str[j] = '\0';
-		printf("%s\t%ld\n", str, root->count);
+		printf("%s %ld\n", str, root->count);
 	}
 	int i;
 	for (i=NUM_LETTERS-1; i>=0; i--){
